@@ -1,0 +1,148 @@
+<div class="content-wrapper">
+    <div class="navbar-top">
+        <div class="rightcontent">
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="ul-left">
+                        <li class="li-left" style="background: white;border-radius: 5px;">
+                            <img width="120" height="35" src="assets/dat-xanh.png">
+                        </li>
+                        <!-- <li >
+                            <a (click)="CallMainClose()">DAT XANH MIEN BAC</a>
+                        </li> -->
+                    </ul>
+                </div>
+                <div class="col-md-6 right-user">
+                    <div class="notification-badge">
+                        <a class="button-badge">
+                            <i class="fa fa-envelope" style="cursor: pointer"></i>
+                            <span class="alert">0</span>
+                        </a>
+                        <a class="button-badge">
+                            <i class="far fa-bell"></i>
+                            <span class="alert">0</span>
+                        </a>
+                    </div>
+                    <div class="ShowUser">
+                        <!-- {{NameLogIn}} -->
+                    </div>
+                    <div class="form-row">
+                        <div class="menu">
+                            <div class="dropbtn" (click)="CheckButton()">
+                                <!-- <img width="23" height="23" src="assets/user-icon.png" > -->
+                            </div>
+                            <div #ItemSubmenu class="submenu">
+                                <li (click)="modalDangnhap.show()">Đăng Ký</li>
+                                <li>Đăng Nhập</li>
+                                <li>Đăng Xuất</li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-4">
+                        <div class="mblock">
+                            <div class="cblock">
+                                <i class="fas fa-home fa-3x"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main-nav">
+    <div class="left">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div>
+                <!-- <img width="180" height="40" src="assets/meiko.png"> -->
+            </div>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a>a</a>
+                <a>b</a>
+                <a>c</a>
+                <a>d</a>
+                <a>e</a>
+            </div>
+        </nav>
+    </div>
+    <!-- <div *ngIf="!main">
+        <app-sidebar [Phanquyen]="getall" (LogOutClicked)="LogOut()"></app-sidebar>
+    </div> -->
+    <div class="right">
+        <router-outlet></router-outlet>
+    </div>
+</div>
+<!-- 
+<app-dialog [(visible)]="showDialog">
+    <div style="text-align:center;" >
+        <img width="300" height="70" src="assets/meiko.png">
+    </div>
+    <div class="form">
+        <form class="login-form" [formGroup]="formdata" (ngSubmit)="onClickSubmit(formdata.value)">
+            <input type="text" autocomplete="off" formControlName="uname" placeholder="tài khoản" />
+            <input type="password" autocomplete="off" formControlName="passwd" placeholder="mật khẩu" />
+            <button type="submit" class="btn btn-sm" [disabled]="!formdata.valid">Đăng Nhập</button>
+        </form>
+    </div>
+</app-dialog>
+<app-dialog [(visible)]="showChangePass">
+        <div class="form">
+            <form class="login-form" [formGroup]="formchangepass" (ngSubmit)="onClickSubmitChangePass(formchangepass.value)">
+                <input type="password" autocomplete="off" formControlName="passwdOld" placeholder="Mật khẩu hiện tại" />
+                <input type="password" autocomplete="off" formControlName="passwdNew" placeholder="Mật khẩu mới" />
+                <input type="password" autocomplete="off" formControlName="passwdChange" placeholder="Nhập lại mật khẩu mới" />
+                <div class="form-row">
+                        <div class="form-group col-md-8">
+                                <button type="submit" class="btn btn-sm" [disabled]="!formchangepass.valid">Cập Nhập</button>
+                        </div>
+                        <div class="form-group col-md-4">
+                                <button type="submit" class="btn btn-sm" (click)="showChangePass=false">Thoát</button>
+                        </div>
+                      </div>
+                      <div style="color: red">
+                          {{messageBox}}
+                      </div>
+            </form>
+        </div>
+    </app-dialog> -->
+    <app-modal #modalDangnhap [modalTitle]="'Đăng Nhập'" [backgroundcolor]="'#4267b2'"
+     [keydownesc]="true" [closemodal]="false"
+      [maximizable]="false" [maximized]="false"
+       [south]="false" [east]="false" 
+       [southEast]="false" [width]="800" 
+       [zIndex]="zIndex">
+        <ng-container class="app-t-header">
+        </ng-container>
+        <ng-container class="app-modal-body">
+            <div style="text-align:center;" >
+                <img width="120" height="35" src="assets/dat-xanh.png">
+            </div>
+            <div class="form">
+                <form class="login-form" [formGroup]="formdata" (ngSubmit)="onClickSubmit(formdata.value)">
+                    <input type="text" autocomplete="off" formControlName="uname" placeholder="tài khoản" />
+                    <input type="password" autocomplete="off" formControlName="passwd" placeholder="mật khẩu" />
+                    <button type="submit" class="btn btn-sm" [disabled]="!formdata.valid">Đăng Nhập</button>
+                </form>
+            </div>
+        </ng-container>
+        <ng-container class="app-modal-footer">
+          <button type="button"  style="width: 75px;" class="btn btn-info btn-sm">
+            <i class="far fa-save tu"></i>
+            Xóa</button>
+          <button type="button" class="btn btn-info btn-sm" style="float: right;" (click)="modalDangnhap.hide()">
+            <i class="far fa-times-circle"></i>
+            Thoát</button>
+        </ng-container>
+      </app-modal>

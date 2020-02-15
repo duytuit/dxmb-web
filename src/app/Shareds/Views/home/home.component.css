@@ -1,0 +1,335 @@
+.rightcontent{
+    text-align:center;
+    background-color: #4267b2;
+    color: #f7f7f8;
+    font-family:Arial, Helvetica, sans-serif;
+    height: 50px;
+   width: 100%;
+   position: fixed;
+   z-index: 1;
+   }
+   .row{
+    margin-right: 0px;
+}
+.col-md-6{
+    padding: 0;
+}
+.ul-left{
+    float: left; 
+    margin-top: 8px;
+    padding: 0;
+    margin-left: 20px;
+}
+li{
+    text-decoration: none;
+    display: inline-block;
+    width: 120px;
+    text-align: left;
+    border: 1px;
+    border-radius: 3px;
+}
+a{
+    color: #ffffff;
+}
+a:hover{
+    text-decoration: none;
+}
+.ShowUser{
+  display: inline-table;
+  margin-top: 12px;
+  padding-top: 4px;
+  padding-left: 4px;
+  float: right;
+  margin-right: 10px;
+  border-radius: 50px;
+}
+.ul-right{
+  display: inline-table;
+    margin-top: 7px;
+    padding-top: 4px;
+    padding-left: 4px;
+    float: right;
+    margin-right: 10px;
+    border-radius: 50px;
+    height: 35px;
+    width: 35px;
+    border: 1px solid #ffffff;
+    transition: transform 0.5s ease;
+}
+
+.li-right{
+    padding: 0;
+    margin-left: 0;
+}
+.ul-right:hover{
+    margin-top: 7px;
+    padding-top: 4px;
+    padding-left: 4px;
+    float: right;
+    margin-right: 10px;
+    border-radius: 50px;
+    height: 35px;
+    width: 35px;
+    border: 1px solid #ffffff;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.divdropdown{
+    top:60px;
+    right:0px;
+    position: absolute;
+    display: inline-block;
+    background-color: #FFF;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    margin: 0;
+    border:1px solid rgb(196, 192, 192);
+}
+.a-dropdown{
+    display: block;
+    color: black;
+    width: 100%;
+    height: 50px;
+    text-align: left;
+    padding: 15px 40px;
+    cursor: pointer;
+}
+.a-dropdown:hover{
+    background-color: #F0F0F0;
+    display: block;
+    color: black;
+    width: 100%;
+    height: 50px;
+    text-align: left;
+    padding: 15px 40px;
+    cursor: pointer;
+}
+.login-page {
+    width: 360px;
+    padding: 8% 0 0;
+    margin: auto;
+  }
+  .form {
+    position: relative;
+    z-index: 1;
+    /* max-width: 360px;
+    margin: 0 auto 100px; */
+    padding: 45px;
+    text-align: center;
+  }
+  .form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #e9ecef;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  .form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+  }
+  .form button:hover,.form button:active,.form button:focus {
+    background: #43A047;
+  }
+  .form .message {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 12px;
+  }
+  .form .message a {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+  .form .register-form {
+    display: none;
+  }
+  .mblock{
+    width: 250px;
+    display: table;
+    height: 175px;
+    text-align: center;
+    margin: 20px;
+    background-color: #FFF;
+    border: 0.5px solid #95959583;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+   
+  }
+  .container{
+   padding-top: 90px;
+  } 
+  .row{
+    margin: 0;
+  }
+  .cblock{
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: bold;
+  }
+  .col-md-4{
+    float: left;
+  }
+  .mblock:hover{
+    width: 250px;
+    display: table;
+    height: 175px;
+    text-align: center;
+    margin: 20px;
+    background-color: #8aabf1;
+    border: 0.5px solid #95959583;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+  }
+  .content{
+    text-align: center;
+    /* background: url(src/assets/Untitled.png) no-repeat fixed;
+    background-size: 100% 100%;
+    min-height: 100vh; */
+  }
+  .fa-home{
+    color: #4267b2;
+  }
+  .left{
+    display: none;
+ }
+ .right{
+     margin-left: 62px;
+ }
+ @media only screen and (max-width: 768px){
+  .rightcontent{
+    display:none;
+    height: 0;
+  }
+  .left{
+    background-color: blue;
+    float: none;
+    width: 100%;
+    display: block;
+    position: relative;
+}
+.left a{
+    display: block;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.left a:hover {
+    background-color: rgba(221, 221, 221, 0.308);
+}
+.right{
+    float: none;
+    width: 100%;
+    margin-left: 0%;
+    margin-top: 60px;
+}
+.navbar-dark{
+    background:#4267b2;
+}
+}
+.button-badge {
+  text-decoration: none;
+  padding: 17px 26px;
+  position: relative;
+  display: inline-table;
+  transition: all ease 0.4s;
+}
+.fa.far {
+  color: white;
+}
+span.alert {
+  position: absolute;
+  background: #cc4b37;
+  color: #fefefe;
+  top: 9px;
+  right: 10px;
+  border-radius: 50px;
+  padding: 0px 5px;
+  font-size: 11px;
+}
+.notification-badge{
+  display: inline-table;
+}
+/* Dropdown Login */
+ul {
+    list-style: none;
+  }
+.menu{
+    position: relative;
+  }
+  .menu > li {
+    float: left;
+  }
+  .menu button {
+    border: 0;
+    cursor: pointer;
+  }
+  .menu button:hover,
+  .menu button:focus {
+    outline: 0;
+    text-decoration: underline;
+  }
+  .submenu {
+    display: none;
+    top:60px;
+    right:0px;
+    position: absolute;
+    background-color: #FFF;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    margin: 0;
+    border:1px solid rgb(196, 192, 192);
+    padding: 3px;
+  }
+  .dropbtn {
+    display: inline-table;
+    color: white;
+    padding: 5px;
+    font-size: 16px;
+    margin-top: 7px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    height: 35px;
+    width: 35px;
+    border: 1px solid #ffffff;
+    transition: transform 0.5s ease;
+  }
+  .dropbtn:hover, .dropbtn:focus {
+    border-radius: 50px;
+    height: 35px;
+    width: 35px;
+    border: 1px solid #ffffff;
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+  .form-row{
+    float: right;
+    margin-right: 10px;
+  }
+  .submenu > li:hover {
+    cursor: pointer;
+    background-color:lightgrey;
+  }
+  .show {
+      display:  inline-block;
+      width: 127px;
+}
